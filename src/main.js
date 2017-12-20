@@ -6,6 +6,9 @@ import {routerMode} from './config/env'
 import './config/rem'
 import FastClick from 'fastclick'
 
+import jQuery from 'jquery';
+global.$ = global.jQuery = jQuery;
+
 if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);
